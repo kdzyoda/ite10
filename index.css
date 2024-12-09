@@ -1,0 +1,247 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family:'Poppins', sans-serif;
+    background-size: cover;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+}
+
+.banner{
+    width:100%;
+    height: 100vh;
+    background-image: linear-gradient(rgba(0,0,0,0.75),rgba(0,0,0,0.75)), url(bg.jpg);
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+    padding: 100px 20px;
+}
+
+.navbar {
+    padding: 10px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: fixed;
+    margin-top: 7px;
+    top: 0;
+    left: 0;
+    right: 0;
+    size: cover;
+    z-index: 1000;
+}
+
+.navbar img {
+    margin-left: 30px;
+    height: 79px;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+.navbar img:active {
+    transform: scale(0.95);
+}
+
+.navbar img:hover {
+    opacity: 0.8;
+}
+
+.navbar ul {
+    list-style: none;
+    display: flex;
+}
+
+.navbar ul li {
+    margin-left: 20px;
+}
+
+.navbar ul li a {
+    color: #288fd3;
+    text-decoration: none;
+    font-family: "Poppins", sans-serif;
+    font-size: 19px;
+    font-weight: 570;
+    padding: 10px 22px;
+    border-radius: 5px;
+}
+
+.navbar ul li a:hover {
+    background-color: #12273D;
+}
+
+/* Banner Styles */
+.banner {
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+    padding: 100px 20px;
+    margin-top: 2px; /* Adjust for fixed navbar height */
+}
+
+.banner .content {
+    max-width: 600px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.banner h1 {
+    font-size: 3em;
+    margin-bottom: 20px;
+}
+
+.banner p {
+    padding: 10px 20px;
+    font-size: 1.2em;
+    margin-bottom: 40px;
+}
+
+.banner button {
+    background-color: #222;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1em;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    margin: 10px 0;
+    font-size: 16px;
+    color: #fff;
+    background-color: #288fd3;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #263f59;
+}
+
+.content h1 {
+    color: #77caee;
+    font-family: "Poppins", sans-serif;
+    margin-top: 99px;
+    justify-content: center;
+    font-weight: bold;
+    font-size: 4em;
+    width: auto;
+    text-align: center;
+}
+
+.content p {
+    color: #fff;
+    font-size: 1.3em;
+    margin: 0 auto;
+    width: 100%;
+    text-align: center;
+}
+.team-section {
+    padding: 60px 5%;
+    background-color: rgba(18, 18, 18, 0.8);
+    backdrop-filter: blur(15px);
+    position: relative;
+}
+.team-section::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url(bg.jpg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    z-index: -1;
+    opacity: 0.3;
+}
+.team-section h2 {
+    text-align: center;
+    font-size: 2.5em;
+    margin-bottom: 40px;
+    color: #288fd3;
+    position: relative;
+}
+.team-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 40px;
+}
+.team-info {
+    flex: 1;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+}
+.info-box {
+    padding: 20px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 8px;
+    background-color: rgba(30, 30, 30, 0.9);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+}
+.info-box:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+    background-color: rgba(40, 40, 40, 0.95);
+}
+.info-box h3 {
+    font-size: 1.2em;
+    margin-bottom: 10px;
+    color: #288fd3;
+}
+.info-box p {
+    font-size: 0.9em;
+    color: #e0e0e0;
+    margin-bottom: 5px;
+}
+.info-box i {
+    margin-right: 10px;
+    color: #288fd3;
+}
+.team-photo {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.team-photo img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    transition: all 0.3s ease;
+    border: 3px solid #19679c;
+}
+.team-photo img:hover {
+    transform: scale(1.02);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.4);
+    border-color: #1565c0;
+}
+.footer-bottom {
+    background-color: #1a212d;
+    color: #89bbdc;
+    font-family: "Poppins", sans-serif;
+    font-size: 19px;
+    text-align: center;
+    padding: 6px 0;
+    position: fixed; /* Changed from absolute to fixed */
+    bottom: 0;
+    width: 100%;
+}
+
+@media (max-width: 768px) {
+    .team-section::before {
+        background-attachment: scroll;
+    }
+}

@@ -1,0 +1,11 @@
+.footerr {
+    background-color: #1a212d;
+    color: beige;
+    font-family: "Poppins", sans-serif;
+    font-size: 23px;
+    text-align: center;
+    padding: 12px 0;
+    position: fixed; /* Changed from absolute to fixed */
+    bottom: 0;
+    width: 100%;
+}
